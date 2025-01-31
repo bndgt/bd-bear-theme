@@ -1,0 +1,57 @@
+/* My custom dashboard for Bear Blog */
+
+/* Dashboard styles */
+:root {
+    --font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    --font-secondary: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+#id_dashboard_styles{
+    height: 600px;
+}
+
+button {
+    padding: 4px 8px 4px 8px;
+}
+
+li {
+    list-style: circle;
+    font-size: 1.1em;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --link-color: #04a5e5;
+    }
+strong, b {
+    color: #000;
+}
+    textarea,
+    input:not([type="submit"]),
+    .editable {
+        font-size: 1.1em;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #313244;
+        --link-color: #74c7ec;
+    }
+strong, b {
+    color: #000;
+}
+    textarea,
+    input:not([type="submit"]),
+    .editable {
+        font-size: 1.1em;
+        background-color: #f1f3f5;
+        color: #232634;
+    }
+}
+
+
+/* Dashboard footer content button (add more as needed) */
+
+<button onclick="event.preventDefault(); window.open('https://bearblog.dev/dashboard/')">ʕ•ᴥ•ʔ Dashboard</button>
+<button onclick="event.preventDefault(); window.open('https://example.com')">Example website</button>
